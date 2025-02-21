@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tier List Character in Wuthering Waves</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+         function handleGetStarted() {
+            window.location.href = "Rangking1.html";
+        }
+        function showMessage(prestasi, url) {
+            let confirmNavigation = confirm('Apakah Anda ingin berpindah ke halaman ' + prestasi + '?');
+            if (confirmNavigation) {
+                console.log("Berpindah ke:", url);
+                window.location.href = url;
+            }
+        }
+
+        function toggleTheme() {
+            document.body.classList.toggle('bg-gray-800');
+            document.body.classList.toggle('text-white');
+            let elements = document.querySelectorAll('.bg-white, .bg-gray-200');
+            elements.forEach(el => {
+                el.classList.toggle('bg-gray-900');
+                el.classList.toggle('text-white');
+            });
+        }
+
+        function showMore() {
+            let moreAchievements = document.getElementById('moreAchievements');
+            let videoDetails = document.getElementById('videoDetails');
+
+            if (moreAchievements.classList.contains('hidden')) {
+                moreAchievements.classList.remove('hidden');
+                videoDetails.classList.remove('hidden');
+                document.getElementById('showMoreBtn').innerText = 'Sembunyikan';
+            } else {
+                moreAchievements.classList.add('hidden');
+                
+                document.getElementById('showMoreBtn').innerText = 'Lihat Lebih Banyak';
+            }
+        }
+    </script>
+       <style>
+        body {
+            background-image: url('Img/Phoebe.png'); /* Ganti dengan nama file gambar lokal */
+            background-size: cover; /* Pastikan gambar menyesuaikan ukuran layar */
+            background-position: center; /* Pusatkan gambar */
+            background-repeat: no-repeat; /* Mencegah gambar berulang */
+            background-attachment: fixed; /* Membuat background tetap saat scrolling */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        .neon-text {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00f, 0 0 40px #00f, 0 0 80px #00f;
+        }
+        
+        .neon-border {
+            border: 2px solid #00f;
+            box-shadow: 0 0 5px #00f, 0 0 10px #00f;
+        }
+        
+        .glowing-effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 255, 0.1);
+            filter: blur(5px);
+            z-index: -1;
+        }
+        
+        .cyber-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        body {
+            background-image: url('Img/Carlotta.jpg'); /* Ganti dengan nama file gambar lokal */
+            background-size: cover; /* Pastikan gambar menyesuaikan ukuran layar */
+            background-position: center; /* Pusatkan gambar */
+            background-repeat: no-repeat; /* Mencegah gambar berulang */
+            background-attachment: fixed; /* Membuat background tetap saat scrolling */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        .neon-text {
+            text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00f, 0 0 40px #00f, 0 0 80px #00f;
+        }
+        
+        .neon-border {
+            border: 2px solid #00f;
+            box-shadow: 0 0 5px #00f, 0 0 10px #00f;
+        }
+        
+        .glowing-effect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 255, 0.1);
+            filter: blur(5px);
+            z-index: -1;
+        }
+        
+        .cyber-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+    </style>
+<body class="bg-gray-200 min-h-screen text-gray-900 flex flex-col justify-between">
+
+    <!-- Konten Utama -->
+    <div class="container mx-auto p-6 flex flex-col items-center gap-8 flex-grow">
+        
+        <!-- Video (Ukuran Diperbesar) -->
+        <div class="bg-gradient-to-r from-gray-900 to-gray-700 rounded-lg overflow-hidden shadow-lg p-4 w-full max-w-4xl">
+            <video class="w-full h-auto rounded-lg border-4 border-gray-300 shadow-xl" controls>
+                <source src="Vid/Carlotta.mp4" type="video/mp4">
+                Browser Anda tidak mendukung tag video.
+            </video>
+        </div>
+        
+        <!-- Informasi Siswa (Teks) -->
+        <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
+            <h2 class="text-2xl font-bold mb-2">Carlotta</h2>
+            <p class="text-lg"><strong>Attack:</strong> 463</p>
+            <p class="text-lg"><strong>HP:</strong> 12450</p>
+            <p class="text-lg"><strong>Crit.Rate:</strong> 5%</p>
+            <p class="text-lg"><strong>Crit.Dmg:</strong> 150%</p>
+            <p class="text-lg"><strong>DEF:</strong> 1198</p> 
+            <p class="text-lg"><strong>Energy Regen:</strong> 125</p> 
+              
+            <h2 class="text-xl font-semibold mt-4">Deskripsi:</h2>
+            <ul class="list-disc pl-6 text-gray-800">
+                <li>Carlotta adalah pengguna Glacio Pistol bintang 5 yang ahli dalam memberikan damage luar biasa yang berfokus pada Skill Resonansi saat bermain dari jarak jauh. Mirip dengan karakter seperti Camellya atau Jiyan, Carlotta adalah Hyper Carry DPS dengan damage yang sangat besar dan persyaratan waktu bermain yang tinggi. Ia bekerja paling baik dalam tim yang dapat menumpuk buff padanya sebelum ia menjalankan rotasi burst damage-nya.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+
+
+    <!-- Banner di Bawah -->
+    <footer class="bg-gray-500 text-white text-center py-2 text-lg font-semibold">
+        <span class="mx-2">✨</span> 
+        Selamat Datang di Website Aesar Sigma!
+        <span class="mx-2">✨</span>
+    </footer>
+
+</body>
+</html>
